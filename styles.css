@@ -1,12 +1,7 @@
-*{
-  margin:0;
-  padding:0;
-}
-
 :root {
   --Gondola: #090606;
   --White: #FFFFFF;
-  --border-color: #f5f0f11a;
+  --Biloba-Flower: #F5F0F11A;
   --Cod-Gray: #0E0D0D;
   --Radical-Red: #FF3F58;
   --Night-Rider: #0A0606;
@@ -17,10 +12,6 @@ body{
   color: var(--White);
   position: relative;
   font-family: Roboto;
-  box-sizing: border-box;
-}
-
-body div {
   box-sizing: border-box;
 }
 
@@ -67,13 +58,13 @@ body div {
 }
 
 .header-search {
-  margin: 19px 40px 0 0;
+  margin: 14px 40px 0 0;
 }
 
 .search {
   width: 266px;
   height: 24px;
-  border: 1px solid var(--border-color);
+  border: 1px solid var(--Biloba-Flower);
   border-radius: 4px;
   padding: 10px 10px 10px 16px;
   background-color: var(--Gondola);
@@ -81,7 +72,9 @@ body div {
 }
 
 .header-bell {
-  margin-left: 15px;
+  margin-left: 10px;
+  width: 41px;
+  height: 41px;
 }
 
 /* Menu */
@@ -227,6 +220,7 @@ button:hover {
   padding: 21px 16px 0 16px;
   box-sizing: border-box;
   margin: 25px 90px 0 0;
+  line-height: 130%;
 }
 
 .title-notice {
@@ -288,9 +282,8 @@ button:hover {
 /* Graph*/
 
 .section-diagram {
-  width: 849px;
   height: 343px;
-  padding: 24px;
+  padding: 0px 24px 0 15px;
   margin-top: 24px;
   border-radius: 10px;
 }
@@ -404,7 +397,7 @@ h2 {
   width: 558px;
   height: 343px;
   border-radius: 10px;
-  padding: 24px 23px 35px 24px;
+  padding-left: 24px;
   margin-top: 24px;
 }
 
@@ -419,7 +412,6 @@ h2 {
   height: 343px;
   box-sizing: border-box;
   border-radius: 10px;
-  padding: 24px;
   margin: 24px 90px 0 0;
 }
 
@@ -450,7 +442,7 @@ select {
   height: 30px;
   background-color: var(--Cod-Gray);
   color: var(--White);
-  border-color: var(--border-color);
+  border-color: var(--Biloba-Flower);
   border-radius: 5px;
   cursor: pointer;
 }
@@ -484,6 +476,7 @@ td p {
 
 h4 {
   font-size: 20px;
+  margin-left: 20px;
 }
 
 table {
@@ -515,14 +508,15 @@ table {
 }
 
 .exam-shedule p {
-  margin: -20px 0 36px 350px;
-  position: relative;
+  margin: -43px 0 36px 350px;
+    position: relative;
 }
 
 .exam-shedule p::after {
   content: url('./images/right-arrow.svg');
   position: absolute;
-  left: 105px;
+  left: 98px;
+  top: -1px;
   cursor: pointer;
 }
 
@@ -530,5 +524,6 @@ table {
   content: url('./images/left-arrow.svg');
   position: absolute;
   left: -30px;
+  top: -2px;
   cursor: pointer;
 }
